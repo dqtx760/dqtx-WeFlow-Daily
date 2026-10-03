@@ -39,22 +39,7 @@
 已有 `weflow` 配置时更新对应项。地址、端口和令牌应与 WeFlow 设置一致；保持 WeFlow 运行，重启客户端并确认能调用 WeFlow 工具。
 
 <details>
-<summary>其他 MCP 客户端：JSON 示例</summary>
 
-```json
-{
-  "mcpServers": {
-    "weflow": {
-      "command": "npx",
-      "args": ["-y", "weflow-mcp"],
-      "env": {
-        "WEFLOW_BASE_URL": "http://127.0.0.1:5031",
-        "WEFLOW_ACCESS_TOKEN": "填写你自己的 Access Token"
-      }
-    }
-  }
-}
-```
 
 客户端需同时支持 MCP 和 skill。[WeFlow MCP 官方说明](https://github.com/L-Chris/weflow-mcp)。
 
