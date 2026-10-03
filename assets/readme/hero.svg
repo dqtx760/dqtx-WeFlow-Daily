@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400" role="img" aria-labelledby="title desc">
+  <title id="title">dqtx-WeFlow-Daily</title>
+  <desc id="desc">一个群名，一份 HTML 群聊日报：通过 WeFlow MCP 读取指定微信群的真实消息，自动整理为带词云、热点与统计的日报。右侧为生成的日报示例，含不规则椭圆词云。</desc>
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="0%" r="100%">
+      <stop offset="0%" stop-color="#1d1c1a"/>
+      <stop offset="80%" stop-color="#141413"/>
+    </radialGradient>
+    <linearGradient id="tv" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="400" rx="24" fill="url(#bg)"/>
+
+  <!-- left: title block -->
+  <text x="64" y="80" font-family="-apple-system,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif" font-size="16" letter-spacing="2" fill="#8db5e2">WECHAT 群聊日报 · SKILL</text>
+  <text x="64" y="138" font-family="-apple-system,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif" font-size="44" font-weight="700" fill="#f5f4ed">dqtx-WeFlow-Daily</text>
+  <rect x="64" y="156" width="120" height="5" rx="2.5" fill="url(#tv)"/>
+  <text x="64" y="200" font-family="-apple-system,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="600" fill="#f5f4ed">一个群名，一份 HTML 群聊日报。</text>
+  <text x="64" y="238" font-family="-apple-system,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif" font-size="19" fill="#c5c3b8">通过 WeFlow MCP 读取指定群的真实消息，</text>
+  <text x="64" y="266" font-family="-apple-system,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif" font-size="19" fill="#c5c3b8">自动整理为带词云、热点与统计的日报。</text>
+
+  <!-- metadata pills -->
+  <g font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="16" fill="#8c8a82">
+    <rect x="64" y="304" width="150" height="34" rx="17" fill="#1a1918" stroke="#33312e"/>
+    <text x="86" y="326">WeFlow MCP</text>
+    <rect x="230" y="304" width="104" height="34" rx="17" fill="#1a1918" stroke="#33312e"/>
+    <text x="252" y="326">深色优先</text>
+    <rect x="350" y="304" width="196" height="34" rx="17" fill="#1a1918" stroke="#33312e"/>
+    <text x="370" y="326">词云 + 数据看板</text>
+  </g>
+
+  <!-- right: report preview card -->
+  <rect x="720" y="48" width="416" height="304" rx="14" fill="#1a1918" stroke="#33312e"/>
+  <rect x="744" y="68" width="104" height="28" rx="14" fill="#143047" stroke="#2f6f9e"/>
+  <circle cx="762" cy="82" r="4" fill="url(#tv)"/>
+  <text x="774" y="87" font-family="-apple-system,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#8db5e2">群聊日报</text>
+  <circle cx="1100" cy="82" r="14" fill="#242321" stroke="#33312e"/>
+  <text x="744" y="124" font-family="-apple-system,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif" font-size="18" font-weight="600" fill="#f5f4ed">示例群 · 群聊日报</text>
+
+  <!-- word cloud ellipse -->
+  <g>
+    <circle cx="928" cy="240" r="78" fill="#45413a"/>
+    <circle cx="862" cy="214" r="70" fill="#45413a"/>
+    <circle cx="1002" cy="230" r="72" fill="#45413a"/>
+    <circle cx="892" cy="284" r="66" fill="#45413a"/>
+    <circle cx="988" cy="280" r="60" fill="#45413a"/>
+    <circle cx="930" cy="196" r="54" fill="#45413a"/>
+  </g>
+  <g font-family="-apple-system,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif" text-anchor="middle">
+    <text x="928" y="242" font-size="30" font-weight="800" fill="#f5f4ed">AI工具</text>
+    <text x="876" y="184" font-size="22" font-weight="700" fill="#8db5e2">自动化</text>
+    <text x="986" y="194" font-size="20" font-weight="700" fill="#8e78a5" transform="rotate(-8 986 194)">Agent</text>
+    <text x="842" y="250" font-size="19" font-weight="700" fill="#c9934e" transform="rotate(6 842 250)">工作流</text>
+    <text x="1004" y="254" font-size="18" font-weight="700" fill="#ec8fb0" transform="rotate(8 1004 254)">效率</text>
+    <text x="908" y="208" font-size="18" font-weight="700" fill="#788a5e" transform="rotate(-5 908 208)">MCP</text>
+    <text x="832" y="298" font-size="17" font-weight="500" fill="#2dd4bf" transform="rotate(4 832 298)">提示词</text>
+    <text x="988" y="298" font-size="15" font-weight="500" fill="#8c8a82">部署</text>
+    <text x="872" y="320" font-size="15" font-weight="500" fill="#8db5e2" transform="rotate(-6 872 320)">笔记</text>
+    <text x="1012" y="320" font-size="14" font-weight="500" fill="#8e78a5">开源</text>
+    <text x="936" y="324" font-size="14" font-weight="500" fill="#c9934e">协作</text>
+  </g>
+</svg>
