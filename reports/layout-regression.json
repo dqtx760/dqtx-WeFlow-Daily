@@ -1,6 +1,6 @@
 {
   "method": "DOM geometry fixtures measured with Microsoft YaHei via Pillow; not a browser or real-phone test",
-  "passed": 8,
+  "passed": 10,
   "results": [
     {
       "width": 600,
@@ -65,6 +65,22 @@
       },
       "visible_viewport_sizing": true,
       "card_scroll_height": true
+    },
+    {
+      "inflated_viewport": 8000,
+      "visible_screen": 844,
+      "clientY": 7400,
+      "screenY": 500,
+      "overlayTop": 6900,
+      "card_in_screen_estimate": true
+    },
+    {
+      "inflated_viewport": 8000,
+      "visible_screen": 844,
+      "clientY": 7800,
+      "screenY": 600,
+      "overlayTop": 7156,
+      "card_in_screen_estimate": true
     }
   ]
 }
