@@ -4,7 +4,7 @@
 
 **一个群名，一份 HTML 群聊日报。**
 
-通过 WeFlow MCP 读取指定微信群的真实消息，自动整理为带词云、热点和统计的日报。
+通过 WeFlow MCP 读取指定\/信群的真实消息，自动整理为带词云、热点和统计的日报。
 
 [开始安装](#开始安装) · [使用示例](#使用示例) · [关于作者](#关于作者)
 
@@ -17,17 +17,23 @@
 这是使用本 skill 的前提，请先完成这一步。
 
 1. [下载 WeFlow 安装包](https://pan.xunlei.com/s/VP1LIQZGCXCfvEMV53Ut48uWA1?pwd=cs4s)，提取码：`cs4s`。
-2. 按 WeFlow 引导连接自己的微信数据库，在设置中启用 **API 服务**，复制自己的 **Access Token**。
-3. 安装 Node.js/npm，在 AI 客户端配置 WeFlow MCP。下面是 Codex 的 `config.toml` 示例：
+2. 按 WeFlow 引导连接自己的\/信数据库，在设置中启用 **API 服务**，复制自己的 **Access Token**。
+3. 安装 Node.js/npm，在 AI 客户端配置 WeFlow MCP。提示词示例：
 
-```toml
-[mcp_servers.weflow]
-command = "npx"
-args = ["-y", "weflow-mcp"]
-
-[mcp_servers.weflow.env]
-WEFLOW_BASE_URL = "http://127.0.0.1:5031"
-WEFLOW_ACCESS_TOKEN = "填写你自己的 Access Token"
+```
+帮我配置此MCP服务
+{
+  "mcpServers": {
+    "weflow": {
+      "command": "npx",
+      "args": ["-y", "weflow-mcp"],
+      "env": {
+        "WEFLOW_BASE_URL": "http://127.0.0.1:5031",
+        "WEFLOW_ACCESS_TOKEN": "填写你自己的 Access Token"
+      }
+    }
+  }
+}
 ```
 
 已有 `weflow` 配置时更新对应项。地址、端口和令牌应与 WeFlow 设置一致；保持 WeFlow 运行，重启客户端并确认能调用 WeFlow 工具。
@@ -77,7 +83,7 @@ $dqtx-WeFlow-Daily 柴宝养成计划（做AI养生版）
 
 首个标题为 **群名称 · 群聊日报**。完整版包含词云、讨论热点、资源、答疑、消息汇总、金句和数据看板；简化版保留词云、最多三个热点、消息汇总及前三名发言榜。
 
-HTML 首次打开默认深色。词云使用不同字号、字重、颜色及倾斜角度，保留不规则椭圆底板。二维码原图已内嵌；正常浏览器显示居中弹窗，异常微信文件预览在页尾展开二维码卡片。更新 skill 后需重新生成，已发出的旧 HTML 不会自动变化。
+HTML 首次打开默认深色。词云使用不同字号、字重、颜色及倾斜角度，保留不规则椭圆底板。二维码原图已内嵌；正常浏览器显示居中弹窗，异常\/信文件预览在页尾展开二维码卡片。更新 skill 后需重新生成，已发出的旧 HTML 不会自动变化。
 
 同名多群时先选择；连接或认证失败时报告错误，不编造内容；消息不完整时标注“部分记录”。skill 只读取指定群并生成文件，不自动发送或公开发布群记录。
 
@@ -90,7 +96,7 @@ HTML 首次打开默认深色。词云使用不同字号、字重、颜色及倾
 python scripts/check_report.py "你的日报.html"
 ```
 
-静态校验不等于微信真机测试。用户已确认上一版二维码和深色背景可正常显示，本次词云排布仍需在目标手机检查。
+静态校验不等于\/信真机测试。用户已确认上一版二维码和深色背景可正常显示，本次词云排布仍需在目标手机检查。
 
 </details>
 
@@ -110,7 +116,8 @@ python scripts/check_report.py "你的日报.html"
 | 大强同学 GitHub | [dqtx760](https://github.com/dqtx760) |
 | 大强同学 OpenList | [dqtx.fly.dev](https://dqtx.fly.dev/) |
 
-- 公众号：微信搜索「大强同学」
+公众号：微信搜索「大强同学」
+
 ![](https://gitee.com/da-qiang-classmate/typora/raw/master/image/未命名的设计（2）.webp)
 
 喜欢 AI 提效与实用工具？从 [大强同学主页](https://www.dqtx.cc/) 开始逛逛。
