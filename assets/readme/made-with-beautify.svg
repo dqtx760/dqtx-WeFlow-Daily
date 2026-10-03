@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="64" viewBox="0 0 420 64" role="img" aria-labelledby="title desc">
+  <title id="title">README made with beautify-github-readme</title>
+  <desc id="desc">dqtx-WeFlow-Daily 的 README 由 beautify-github-readme 美化。</desc>
+  <defs>
+    <linearGradient id="tv" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+  </defs>
+  <rect width="420" height="64" rx="14" fill="#141413" stroke="#33312e"/>
+  <rect x="20" y="22" width="4" height="20" rx="2" fill="url(#tv)"/>
+  <circle cx="42" cy="32" r="10" fill="#45413a"/>
+  <circle cx="37" cy="28" r="2.4" fill="#8db5e2"/>
+  <circle cx="47" cy="36" r="2.4" fill="#c9934e"/>
+  <circle cx="42" cy="33" r="2" fill="#788a5e"/>
+  <text x="66" y="28" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" letter-spacing="1" fill="#8c8a82">README MADE WITH</text>
+  <text x="66" y="48" font-family="-apple-system,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif" font-size="15" font-weight="600" fill="#8db5e2">beautify-github-readme</text>
+  <text x="396" y="44" font-family="-apple-system,Segoe UI,sans-serif" font-size="16" fill="#8c8a82">&#8599;</text>
+</svg>

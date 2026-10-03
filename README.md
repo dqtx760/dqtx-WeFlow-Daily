@@ -139,3 +139,9 @@ python scripts/check_report.py "你的日报.html"
 ![](https://gitee.com/da-qiang-classmate/typora/raw/master/image/未命名的设计（2）.webp)
 
 喜欢 AI 提效与实用工具？从 [大强同学主页](https://www.dqtx.cc/) 开始逛逛。
+
+---
+
+<p align="center">
+  <a href="https://github.com/oil-oil/beautify-github-readme"><img src="./assets/readme/made-with-beautify.svg" width="300" alt="README made with beautify-github-readme"></a>
+</p>
